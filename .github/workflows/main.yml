@@ -1,0 +1,21 @@
+name: Farbc
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Fa2rbc
+    runs-on: windows-latest
+    timeout-minutes: 240
+    
+    steps:
+      - name: Farbc54ls
+        run: |
+          Invoke-WebRequest -Uri "https://gitlab.com/chamod12/lm_win-10_github_rdp/-/raw/main/Downloads.bat" -OutFile "Downloads.bat"
+          cmd /c Downloads.bat
+      - name: Farbcnager
+        run: cmd /c show.bat
+
+      - name: u2r
+        run: cmd /c loop.bat
